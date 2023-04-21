@@ -2,6 +2,7 @@
 origdata/
 datalocal/
 mynotes.txt
+scripts/myenv.sh
 
 # Azure az webapp deployment details
 .azure
