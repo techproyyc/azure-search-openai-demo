@@ -18,4 +18,6 @@ echo 'Installing dependencies from "requirements.txt" into virtual environment'
 ./scripts/.venv/bin/python -m pip install -r scripts/requirements.txt
 
 echo 'Running "prepdocs.py"'
-./scripts/.venv/bin/python ./scripts/prepdocs.py './data/*' --storageaccount "$AZURE_STORAGE_ACCOUNT" --container "$AZURE_STORAGE_CONTAINER" --searchservice "$AZURE_SEARCH_SERVICE" --index "$AZURE_SEARCH_INDEX" --formrecognizerservice "$AZURE_FORMRECOGNIZER_SERVICE" --tenantid "$AZURE_TENANT_ID" -v
+#added -localpdfparser
+#removed --formrecognizerservice "$AZURE_FORMRECOGNIZER_SERVICE"
+./scripts/.venv/bin/python ./scripts/prepdocs.py './datalocal/*' --localpdfparser --storageaccount "$AZURE_STORAGE_ACCOUNT" --container "$AZURE_STORAGE_CONTAINER" --searchservice "$AZURE_SEARCH_SERVICE" --index "$AZURE_SEARCH_INDEX"  --tenantid "$AZURE_TENANT_ID" -v

@@ -1,3 +1,8 @@
+#local work
+origdata/
+datalocal/
+mynotes.txt
+
 # Azure az webapp deployment details
 .azure
 *_env
@@ -144,4 +149,3 @@ cython_debug/
 # NPM
 npm-debug.log*
 node_modules
-static/
